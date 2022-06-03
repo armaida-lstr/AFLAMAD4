@@ -11,6 +11,10 @@
 		04104D4F2848F9A100FCFC04 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04104D4E2848F9A100FCFC04 /* ContentView.swift */; };
 		04104D512848F9A200FCFC04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04104D502848F9A200FCFC04 /* Assets.xcassets */; };
 		04104D542848F9A200FCFC04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04104D532848F9A200FCFC04 /* Preview Assets.xcassets */; };
+		04104D5D2848FBB500FCFC04 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 04104D5C2848FBB400FCFC04 /* SwiftyJSON */; };
+		04104D602848FBDA00FCFC04 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 04104D5F2848FBDA00FCFC04 /* SDWebImageSwiftUI */; };
+		04104D652848FC7600FCFC04 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04104D642848FC7600FCFC04 /* News.swift */; };
+		04104D682848FCAD00FCFC04 /* NewsM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04104D672848FCAD00FCFC04 /* NewsM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		04104D4E2848F9A100FCFC04 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04104D502848F9A200FCFC04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04104D532848F9A200FCFC04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04104D5A2848FB3C00FCFC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		04104D642848FC7600FCFC04 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		04104D672848FCAD00FCFC04 /* NewsM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04104D602848FBDA00FCFC04 /* SDWebImageSwiftUI in Frameworks */,
+				04104D5D2848FBB500FCFC04 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +60,11 @@
 		04104D4B2848F9A100FCFC04 /* AFLAMAD4 */ = {
 			isa = PBXGroup;
 			children = (
+				04104D662848FC9100FCFC04 /* VM */,
+				04104D632848FC5800FCFC04 /* Model */,
+				04104D612848FBF700FCFC04 /* Views */,
+				04104D5A2848FB3C00FCFC04 /* Info.plist */,
 				04104D4C2848F9A100FCFC04 /* AFLAMAD4App.swift */,
-				04104D4E2848F9A100FCFC04 /* ContentView.swift */,
 				04104D502848F9A200FCFC04 /* Assets.xcassets */,
 				04104D522848F9A200FCFC04 /* Preview Content */,
 			);
@@ -65,6 +77,30 @@
 				04104D532848F9A200FCFC04 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04104D612848FBF700FCFC04 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04104D4E2848F9A100FCFC04 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04104D632848FC5800FCFC04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04104D642848FC7600FCFC04 /* News.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04104D662848FC9100FCFC04 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				04104D672848FCAD00FCFC04 /* NewsM.swift */,
+			);
+			path = VM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +119,10 @@
 			dependencies = (
 			);
 			name = AFLAMAD4;
+			packageProductDependencies = (
+				04104D5C2848FBB400FCFC04 /* SwiftyJSON */,
+				04104D5F2848FBDA00FCFC04 /* SDWebImageSwiftUI */,
+			);
 			productName = AFLAMAD4;
 			productReference = 04104D492848F9A100FCFC04 /* AFLAMAD4.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +151,10 @@
 				Base,
 			);
 			mainGroup = 04104D402848F9A100FCFC04;
+			packageReferences = (
+				04104D5B2848FBB400FCFC04 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				04104D5E2848FBDA00FCFC04 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 04104D4A2848F9A100FCFC04 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04104D682848FCAD00FCFC04 /* NewsM.swift in Sources */,
+				04104D652848FC7600FCFC04 /* News.swift in Sources */,
 				04104D4F2848F9A100FCFC04 /* ContentView.swift in Sources */,
 				04104D4D2848F9A100FCFC04 /* AFLAMAD4App.swift in Sources */,
 			);
@@ -271,6 +317,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AFLAMAD4/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AFLAMAD4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +346,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AFLAMAD4/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AFLAMAD4/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +387,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		04104D5B2848FBB400FCFC04 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		04104D5E2848FBDA00FCFC04 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		04104D5C2848FBB400FCFC04 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04104D5B2848FBB400FCFC04 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		04104D5F2848FBDA00FCFC04 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04104D5E2848FBDA00FCFC04 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 04104D412848F9A100FCFC04 /* Project object */;
 }
